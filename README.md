@@ -1,2 +1,3 @@
 # pwfirewall
-Personal Firewall
+Personal Firewall 
+Junaid Saeed Uppal <uppal@linux.net.pk>
