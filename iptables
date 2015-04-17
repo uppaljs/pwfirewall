@@ -26,7 +26,7 @@
 -A RH-Firewall-1-INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 #Allow Our Ranges
 -A RH-Firewall-1-INPUT  -s 178.62.227.89 -j ACCEPT
--A RH-Firewall-1-INPUT --dport 51413 -j DROP
+-A RH-Firewall-1-INPUT -m udp --dport 51413 -j DROP
 #Allow Ports
 #Unknown Server - Check on JIN
 -A RH-Firewall-1-INPUT -p tcp -m state --state NEW -m tcp --dport 8181 -j ACCEPT
